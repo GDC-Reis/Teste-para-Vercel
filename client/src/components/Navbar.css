@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav_link
+{
+    list-style: none;
+    display: flex;
+    gap: .5rem;
+}
+
+nav{
+    background: #F1EB90;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    list-style: none;
+    padding: 1rem;
+} 
+
+nav a {
+    margin: 0 10px;
+    padding: 5px; 
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover{
+    color: #ccc;
+}
+
+.active {
+    background-color: #000;
+    color: #fff;
+    border-radius: 3rem;
+}
