@@ -1,10 +1,10 @@
-h1{
-    text-align: center;
-}
-
 .main{
     margin: 0px;
     padding: 0px;
+    text-align: center;
+}
+
+h1{
     text-align: center;
 }
 
@@ -15,11 +15,11 @@ h1{
 .SpanEffect_Title_Breve_Resumo{
     position: absolute;
     width: 20rem;
-    margin-top: -36px;
-    margin-left: 32rem;
+    margin-top: -2.7rem;
+    margin-left: 49rem;
     background-color: #000;
     display: block;
-    padding: 1px;
+    padding: 0.08rem
 }
 
 .Container_intro{
@@ -28,11 +28,14 @@ h1{
     margin: 1.5rem;
     border-radius: 1rem;
     height: 15rem;
+    /* border: 1px #000; */
+    box-shadow: rgba(0, 0, 0, .15) 0px -2px 10px 0px;
 }
 
 .Container_intro_text{
+    margin: 4rem;
+    display: block;
     text-align: start;
-    margin: 2rem;
 }
 
 .Container_Amotra_Produtos{
@@ -96,19 +99,21 @@ h1{
 }
 
 .Button_Comprar {
-  background-color: #000;
-  border-radius: 4px;
-  border: 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  padding: 16px 20px;
-  text-align: center;
-  touch-action: manipulation;
-  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+    text-decoration: none;
+    display: inline-block;
+    background-color: #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 16px 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: all .2s cubic-bezier(.22, .61, .36, 1);
+    margin: 0.5rem;
 }
 
 .Button_Comprar:hover {
@@ -116,3 +121,27 @@ h1{
   color: #000;
   transform: translateY(-2px);
 }
+
+.Contato_Container{
+    background: #F6F6F6;
+}
+
+
+@media (max-width: 1360px){
+    .SpanEffect_Title_Breve_Resumo{
+        position: absolute;
+        width: 20rem;
+        margin-top: -2.7rem;
+        margin-left: 32rem;
+        background-color: #000;
+        display: block;
+        padding: 0.08rem
+    }
+
+    .Container_intro_text{
+        margin: 2rem;
+        display: block;
+        text-align: start;
+    }
+}
+

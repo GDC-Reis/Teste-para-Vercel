@@ -35,35 +35,65 @@ const Contato = () => {
 
 
     return ( 
-        <div className="container">
-            <h1 className="contato">Contato</h1>
+        <div className="container_contato">
+            
+            <div className="container_contato_forms">
+                
+                <form className="form" onSubmit={sendEmail}>
+                    <h1 className="form__title">Contato</h1>
+                    <span className='SpanEffect1'/>
+                    
+                    <div className="form1_conteudo">
+                        <input
+                            className="input"
+                            type="text"
+                            placeholder="Digite seu nome"
+                            onChange={(e) => setName(e.target.value)}
+                            value={name}
+                        />
 
-            <form className="form" onSubmit={sendEmail}>
-                <input
-                    className="input"
-                    type="text"
-                    placeholder="Digite seu nome"
-                    onChange={(e) => setName(e.target.value)}
-                    value={name}
-                />
+                        <input
+                            className="input"
+                            type="text"
+                            placeholder="Digite seu e-mail"
+                            onChange={(e) => setEmail(e.target.value)}
+                            value={email}
+                        />
 
-                <input
-                    className="input"
-                    type="text"
-                    placeholder="Digite seu e-mail"
-                    onChange={(e) => setEmail(e.target.value)}
-                    value={email}
-                />
+                        <textarea
+                            className="textarea"
+                            placeholder=" Digite sua mensagem..."
+                            onChange={(e) => setMessage(e.target.value)}
+                            value={message}
+                        />
 
-                <textarea
-                    className="textarea"
-                    placeholder="Digite sua mensagem..."
-                    onChange={(e) => setMessage(e.target.value)}
-                    value={message}
-                />
+                    </div>
+                    
+                    <input className="button1" type="submit" value="Enviar" />
+                </form>
 
-                <input className="button" type="submit" value="Enviar" />
-            </form>
+
+                <div className="lista_contatos">
+                    <div className="lista_contatos__conteudo">
+                        
+                        <h1 className="lista_contatos__title">Informações de Contato</h1>
+                        <span className='SpanEffect2'/>
+                        
+                        <ul className="lista_contatos__conteudo__endereco">
+                            <h3>Endereço</h3>
+                            <li>Rua Nicolau Carneiro Leão, 572, Américo Brasiliense - SP</li>
+                        </ul>
+
+                        <ul className="lista_contatos__conteudo__telefone">
+                            <h3>Telefone</h3>
+                            <li>+55 (16) 98177-9595</li>
+                        </ul>
+            
+                    </div>
+                </div>
+            </div>
+
+
         </div>
      );
 }

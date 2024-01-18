@@ -40,8 +40,8 @@ function App() {
 
   return (
     <div className="App">
-      <img />
-      <h1>Mel Dourado</h1>
+      {/* <img /> */}
+      {/* <h1>Mel Dourado</h1> */}
      <AuthProvider value={{user}}>
       <BrowserRouter>
       {/* <div></div>

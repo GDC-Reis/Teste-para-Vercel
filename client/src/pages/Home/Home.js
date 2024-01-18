@@ -4,6 +4,7 @@ import './Home.css';
 //Hooks
 import {useState, useEffect, useRef} from 'react';
 import {motion} from 'framer-motion';
+import { NavLink } from 'react-router-dom';
 
 //imagens
 import img1 from '../../images/andrzj-brown-U0qJT3ynHOE-unsplash.jpg';
@@ -14,6 +15,7 @@ import img4 from '../../images/klara-avsenik-5cFqO92t7pM-unsplash.jpg';
 //Components
 import Contato from '../../components/Contato';
 import EsqueceuSenha from '../../components/EsqueceuSenha';
+import Footer from '../../components/Footer';
 
 const images = [img1, img2, img3, img4]
 
@@ -34,7 +36,7 @@ const Home = () => {
         <section className='main'>
 
             <h1 className='Title_breve_resumo'>Breve Resumo de Nossa História</h1>
-            <span className='SpanEffect_Title_Breve_Resumo'></span>
+            <span className='SpanEffect_Title_Breve_Resumo'/>
             <div className='Container_intro'>
                 <div className='Container_intro_text'>
                     <p>Na pacata cidade de Américo Brasiliense, a família Silva se dedica apaixonadamente à produção de mel de forma caseira. 
@@ -58,6 +60,7 @@ const Home = () => {
                             Sinta o sabor genuíno da natureza em cada gota, uma experiência autêntica diretamente da colmeia para sua mesa.</p>
                     </div>
                     
+                    {/* <div className='carousel__main'> */}
                     <motion.div ref={carousel} className='carousel' whileTap={{cursor: "grabbing"}}>
                         <motion.div className='inner' drag="x" dragConstraints={{right: 0, left: -width}} initial={{x: 200}} animate={{x: 0}} transition={{duration: 0.8}}>
 
@@ -68,8 +71,9 @@ const Home = () => {
 
                         </motion.div>
                     </motion.div>
+                    {/* </div> */}
                     
-                    <button className='Button_Comprar'>Comprar</button>
+                    <NavLink className='Button_Comprar' to="/register">Comprar</NavLink>
                 </div>
             </div>
             
@@ -78,11 +82,11 @@ const Home = () => {
                     <Contato/>
                 </div>
             </div>
-{/* 
-            <div>
-                <EsqueceuSenha/>
-            </div> */}
-    
+
+            <div className='Footer_Home'>
+                <Footer/>
+            </div>
+
         </section>
         
      );

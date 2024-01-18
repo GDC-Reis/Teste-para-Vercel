@@ -12,45 +12,50 @@ const Navbar = () => {
     const {logout} = useAuthentication();
 
     return ( 
-        <nav>
-           
-           <ul className="nav_link">
-                <li><NavLink to="/home">Home</NavLink></li>
-           </ul>
-            
-            
-            {!user && (
-                
-                <ul className="nav_link"> 
-                    <li>
-                        <NavLink to="/register">Cadastrar</NavLink>
-                    </li>
-            
-                    <li>
-                        <NavLink to="/login">Login</NavLink>
-                    </li>
+        <nav className="navbar">
+
+          <NavLink to="/home" className="brand">Mel <span>Dourado</span></NavLink>
+
+          <div className="nav_teste">
+
+            <ul className="links_link">
+                    <li> <NavLink to="/home" className="">Inicio</NavLink></li>
+
+                    <li> <NavLink to="/about" className="">Sobre</NavLink></li>
+
+                    {!user && (
                     
-                </ul>
-            )}
-            
-            <ul className="nav_link">
-                <li><NavLink to="/about">Sobre</NavLink></li>
-            </ul>
-            
-            <ul className="nav_link">
-                <li><NavLink to="/product">Produtos</NavLink></li>
-            </ul>
+                    <ul className="links_link"> 
+                        <li> <NavLink to="/register">Cadastrar</NavLink>
+                        </li>
 
-            {user && (
-                <ul className="nav_link">
-                    <li>
-                        <button onClick={logout}>Sair</button>
-                    </li>
-                </ul>
+                        <li>
+                            <NavLink to="/login">Login</NavLink>
+                        </li>
+                        
+                    </ul>
+                )}
                 
-            )}
 
+                {user && (
+                    <ul className="links_link">
+                        <li>
+                            <button onClick={logout}>Sair</button>
+                        </li>
+
+                        <li>
+                            <NavLink to="/product">Produtos</NavLink>
+                        </li>
+                        
+                    </ul>
+                )}
+
+            </ul>
             
+
+          </div>
+           
+           
             
         </nav>
      );

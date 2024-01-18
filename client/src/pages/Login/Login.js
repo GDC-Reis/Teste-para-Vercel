@@ -2,6 +2,8 @@ import { useAuthentication } from "../../hooks/useAuthentication";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
+import './Login.css'
+
 const Login = () => {
 
     const [email, setEmail] = useState();
@@ -35,8 +37,8 @@ const Login = () => {
     return ( 
         <div>
            
-           <h1>Entrar</h1>
-           <p>Faça o login para realizar compras</p>
+           <h1 className="title_page">Entrar</h1>
+           <p className="subtitle_page">Faça o login para realizar compras</p>
             
             <form onSubmit={handleSubmit}>
 
@@ -73,7 +75,7 @@ const Login = () => {
             </form>
 
             <div>
-                <NavLink to="/esqueceuSenha">Esqueci minha senha</NavLink>
+                <NavLink to="/esqueceuSenha" className="esqueceu_senha">Esqueci minha senha &#128517;</NavLink>
             </div>
 
         </div>

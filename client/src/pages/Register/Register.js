@@ -42,12 +42,12 @@ const Register = () => {
 
     return ( 
         <div>
-            <h1>Cadastra-se para realizar sua compra</h1>
+            <h1 className='titulo_inicial'>Cadastra-se para realizar sua compra</h1>
             
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='form_sumbit'>
                 
                 <label>
-                    <span>Nome:</span>
+                    <span>Nome: </span>
                     <input 
                         type="texte"
                         name="displayName"
@@ -58,7 +58,7 @@ const Register = () => {
                 </label>
 
                 <label>
-                    <span>Email:</span>
+                    <span>Email: </span>
                     <input
                         type="email"
                         name="email"
@@ -69,7 +69,7 @@ const Register = () => {
                 </label>
 
                 <label>
-                    <span>Senha:</span>
+                    <span>Senha: </span>
                     <input
                         type="password"
                         name="password"
@@ -80,7 +80,7 @@ const Register = () => {
                 </label>
 
                 <label>
-                    <span>Confirmação de senha</span>
+                    <span>Confirmação de senha: </span>
                     <input 
                         type="password"
                         name="password"

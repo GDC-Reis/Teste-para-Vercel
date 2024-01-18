@@ -1,0 +1,45 @@
+.title_page{
+    margin: 3rem;
+}
+
+.subtitle_page{
+    text-align: center;
+    margin: 2rem;
+    font-weight: bold;
+}
+
+.error{
+    font-size: 1.5rem;
+    display: block;
+    margin: 0;
+    padding: 2rem;
+    position: absolute;
+    margin-left: -2rem;
+    color: red;;
+}
+
+.esqueceu_senha{
+    text-decoration: none;
+    position: absolute;
+    display: inline-block;
+    margin-left: 49rem;
+    margin-top: -2rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #FF0000;
+}
+  
+
+@media (min-width: 1920px){
+    
+    .esqueceu_senha{
+        text-decoration: none;
+        position: absolute;
+        display: inline-block;
+        margin-left: 73rem;
+        margin-top: -2rem;
+        font-size: 0.95rem;
+        color: #FF0000;
+    }
+
+}

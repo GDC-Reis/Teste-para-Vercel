@@ -1,7 +1,120 @@
-.container{
+.container_contato{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.contato{
+    padding: 1.5rem;
+}
+
+.form__title{
+    margin: 1rem;
+}
+
+.form{
     display: flex;
     flex-direction: column;
-    margin: 0rem;
-    padding: 2rem;
+    align-items: flex-start;
     flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0.5rem;
+    width: 100%;
+}
+
+.container_contato_forms{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 9rem;
+    margin-right: 9rem;
+}
+
+
+.SpanEffect1{
+    position: absolute;
+    width: 4.5rem;
+    margin-top: 3rem;
+    margin-left: 1.4rem;
+    background-color: #000;
+    display: block;
+    padding: 1px;
+}
+
+/*Analisar o código css abaixo (VISUAL)*/
+
+.form1_conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1rem;
+    align-items: start;
+}
+
+.textarea,
+.input {
+    width: 12rem;
+    border: solid 0.1rem black;
+    height: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    text-size-adjust: 10px;
+}
+
+.textarea {
+    display: block;
+    width: 100%;
+    resize: none; /*Impede o redimensionamento pelo usuário*/
+    overflow-y: hidden; /* Adiciona uma barra de rolagem vertical, se necessário */
+    grid-column: span 2; /* Esta propriedade faz o textarea ocupar duas colunas no grid */
+}
+
+
+.button1{
+    margin-top: 0rem;
+    padding: 0.5rem;
+    width: 7rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    border: solid 0.1rem black;
+    background: #F1EB90;
+}
+
+.button1:hover {
+    /* Adicione estilos para quando o botão estiver sendo hover */
+    background-color: #F1EB90; /* Altere a cor de fundo conforme necessário */
+    cursor: pointer;
+}
+
+.button1:active {
+    /* Adicione estilos para quando o botão estiver sendo pressionado */
+    background-color: black; /* Altere a cor de fundo conforme necessário */
+    color: white;
+}
+
+.lista_contatos__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.4rem;
+    align-items: start;
+}
+
+.lista_contatos__conteudo, h3{
+    text-align: start;
+}
+
+.lista_contatos__conteudo__endereco,
+.lista_contatos__conteudo__telefone,
+li{
+    margin-top: 1.3rem;
+    list-style: none;
+}
+
+.SpanEffect2{
+    position: absolute;
+    width: 13.7rem;
+    margin-top: 2.1rem;
+    margin-left: 1.2rem;
+    background-color: #000;
+    display: block;
+    padding: 1px;
 }
