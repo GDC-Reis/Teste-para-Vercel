@@ -25,10 +25,12 @@ const EsqueceuSenha = () => {
     return (
         <div>
             <div className="App">
-                <h1 className="title_page_esqueceu_senha">Forgot Password</h1>
-                <div className="form_esqueceu_senha">
-                    <form onSubmit={(e) => handleSubmit(e)}>
-                        <input name="email" /><br /><br />
+                
+                <h1 className="title_page_esqueceu_senha">Recuperação de Senha</h1>
+                
+                <div>
+                    <form className="form_esqueceu_senha" onSubmit={(e) => handleSubmit(e)}>
+                        <input name="email" className="input_email_esqueceu_senha"/><br /><br />
                         <button className="btn_esqueceu_senha">Enviar</button>
                     </form>
                 </div>

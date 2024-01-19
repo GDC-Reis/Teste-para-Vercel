@@ -4,11 +4,13 @@ import { NavLink } from "react-router-dom";
 
 import './Login.css'
 
+
 const Login = () => {
 
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [error, setError] = useState();
+
 
     const {login, error: authErro, loading} = useAuthentication();
 
@@ -75,7 +77,7 @@ const Login = () => {
             </form>
 
             <div>
-                <NavLink to="/esqueceuSenha" className="esqueceu_senha">Esqueci minha senha &#128517;</NavLink>
+                <NavLink to="/esqueceuSenha" className="esqueceu_senha" id="esqueci_senha">Esqueci minha senha &#128517;</NavLink>
             </div>
 
         </div>
